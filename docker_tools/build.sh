@@ -10,4 +10,5 @@ else
       echo "using image name $IMGNAME"
 fi
 
-docker build -t  $IMGNAME .
+#docker build -t  $IMGNAME .
+docker build -t  --env https_proxy="http://192.168.2.83:8118"  $IMGNAME . 
